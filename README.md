@@ -299,8 +299,41 @@
     ctx:closePath()
     ctx.fillStyle =  '#fff'
     ctx:fill()
-    
-
+    
+--程式註解
+    --建立角度函式
+    function deg2rad(deg)
+       return deg*math.pi/180
+    end
+    --建立徑度函式
+    function rad2deg(rad)
+       return rad*180/math.pi
+    end
+    --回傳給...
+    return
+    --定義函式
+    function toggleRadians(ui,id,newVal)
+    --套入函式如果可以就執行該程式
+       if (newVal==2) then
+          angleTo = deg2rad
+          angleFrom = rad2deg
+    --如果不行就用下列程式
+       else
+          angleTo = nullFunc
+          angleFrom = nullFunc
+       end
+    --for迴圈是重複執行do到end之間的程式
+    for i=1,#jointHandles,1 do
+            simSetJointPosition(jointHandles[i],joints[i])
+        end
+    --下列程式只在local內執行，不會在loacl外執行(有local是局部)
+    local
+    --括弧內轉換成數字
+    tonumber()
+    --印出括弧內的字串
+    print("...")
+    --數學函式(a)到(b)
+    math.cos(a),math.sin(a)
     
     
     
